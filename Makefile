@@ -16,7 +16,7 @@ exec:
 	docker compose exec apache /bin/bash
 
 init-symfony:
-	docker compose exec apache sh -c "./init-symfony.sh"
+	sudo docker compose exec apache sh -c "./init-symfony.sh"
 
 init: build up init-symfony
 
